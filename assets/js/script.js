@@ -86,6 +86,19 @@ function caldias(){
   }
   alert (`Años: ${anios}, Semanas: ${semana}, Dias: ${dias} `)
 }
+function Sumas(){
+  var num1 = prompt(`Ingresar numero 1`)
+  num1 = parseFloat(num1);
+  var num2 = prompt('Ingrese Numero 2');
+  num2 = parseFloat(num2);
+  var num3 = prompt('Ingrese Numero 3');
+  num3 = parseFloat(num3);
+  var num4 = prompt('Ingrese Numero 4');
+  num4 = parseFloat(num4);
+  var num5 = prompt('Ingrese Numero 5');
+  num5 = parseFloat(num5);
+  alert (`la Suma es: ${num1+num2+num3+num4+num5}, y el promedio es: ${(num1+num2+num3+num4+num5)/5}`)
+}
 
 $('#suma').click(function(){
   suma()
@@ -110,4 +123,7 @@ $('#fahrenheit').click(function(){
 })
 $('#caldias').click(function(){
   caldias()
+})
+$('#Sumas').click(function(){
+  Sumas()
 })
