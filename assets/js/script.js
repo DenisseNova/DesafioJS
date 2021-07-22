@@ -57,6 +57,16 @@ function modulo(){
   alert (`El modulo es: ${num1*num2}`)
   }
 }
+function kelvin(){
+  var cel1 = prompt ('Ingrese grados celsius');
+  cel1 = parseFloat (cel1);
+  alert (`los grados Kelvin son: ${cel1+273.15} K`)
+}
+function fahrenheit(){
+  var fahr1 = prompt ('Ingrese grados celsius');
+  fahr1= parseFloat (fahr1);
+  alert (`los grados Fahrenheit son: ${(fahr1*9/5)+32} ºF`)
+}
 
 
 $('#suma').click(function(){
@@ -73,4 +83,10 @@ $('#mult').click(function(){
 })
 $('#modulo').click(function(){
   modulo()
+})
+$('#kelvin').click(function(){
+  kelvin()
+})
+$('#fahrenheit').click(function(){
+  fahrenheit()
 })
