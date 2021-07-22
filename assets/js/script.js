@@ -67,7 +67,25 @@ function fahrenheit(){
   fahr1= parseFloat (fahr1);
   alert (`los grados Fahrenheit son: ${(fahr1*9/5)+32} ºF`)
 }
+function caldias(){
+  var diasUsuario = prompt('ingrese total de dias');
+  diasUsuario = parseFloat(diasUsuario);
 
+  var anios = 0, semana = 0, dias = 0;
+
+  if (diasUsuario >= 365){
+    anios = Math.floor(diasUsuario/365)
+    diasRestantes = diasUsuario - (anios*365)
+    semana = Math.floor(diasRestantes /7)
+    dias = diasRestantes - (semana*7);
+  } else if (diasUsuario >= 7){
+    semana = Math.floor(diasUsuario /7)
+    dias = diasUsuario - (semana*7);
+  } else {
+    dias = diasUsuario
+  }
+  alert (`Años: ${anios}, Semanas: ${semana}, Dias: ${dias} `)
+}
 
 $('#suma').click(function(){
   suma()
@@ -89,4 +107,7 @@ $('#kelvin').click(function(){
 })
 $('#fahrenheit').click(function(){
   fahrenheit()
+})
+$('#caldias').click(function(){
+  caldias()
 })
